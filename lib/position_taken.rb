@@ -2,5 +2,5 @@
 def position_taken?(board, location)
   index = board[location.to_i - 1]
   index != " " && index != "" && index != nil 
-  index == "O" && index == "X"
+  index == "O" || index == "X"
 end
